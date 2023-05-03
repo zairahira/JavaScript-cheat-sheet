@@ -260,6 +260,239 @@ undefined when you dont specify a return value
 
 
 
+## comparison with the equality operator
+
+    function testEquaI(val) {
+    if (val == 12) { // single = means assignment
+    
+    return "Equal" ;
+    
+    }
+    
+    return "Not Equal";
+
+Notes:
+
+In JavaScript, the = symbol is the assignment operator and is used to assign a value to a variable. For example, x = 5 assigns the value 5 to the variable x.
+
+The == operator is used for equality comparison, which means it compares two values for equality, and returns a boolean true or false result. For example, 5 == "5" would return true because they have the same value, even though they have different types (5 is a number and "5" is a string).
+
+It's important to note that the == operator performs type coercion, which means that it will attempt to convert the types of the values being compared if they are not already the same. This can sometimes lead to unexpected results. For example, 0 == false would return true, because false is coerced into the number 0 for the comparison.
+
+To avoid the potential issues with type coercion, it's often recommended to use the === operator for strict equality comparison, which checks that the values being compared are of the same type as well as having the same value. For example, 5 === "5" would return false, because they are not of the same type.
+
+## comparison with the strict equality operator
+
+
+To avoid the potential issues with type coercion, it's often recommended to use the === operator for strict equality comparison, which checks that the values being compared are of the same type as well as having the same value. For example, 5 === "5" would return false, because they are not of the same type.
+
+
+
+## comparison with the inequality operator
+
+    if (val != 99) 
+
+## comparison with the strict inequality operator
+
+    if (val !== 77)
+
+## and comparison
+
+    if (val <=50 && val >=25){ // both need to be true
+    	// do somethins
+    }
+
+## else statements
+
+
+	if (true) {
+
+	}
+
+	else{
+
+	}
+
+
+## else if statements
+
+    if() {
+    
+    }
+    
+    else if(){
+    
+    }
+    
+    else{
+    
+    }
+
+## chaining if/else statements
+
+    if(){
+    // ... code body here
+    }
+    
+    else if(){
+    // ... code body here
+    
+    }
+    
+    else if(){
+    // ... code body here
+    
+    }
+    
+    else if(){
+    // ... code body here
+    
+    }
+    
+    else {
+    // ... code body here
+    
+    }
+
+
+## logical order
+
+the sequence of execution is top down
+
+## case statements
+
+    switch (expression) {
+      case value1:
+        // code to be executed when expression matches value1
+        break;
+      case value2:
+        // code to be executed when expression matches value2
+        break;
+      case value3:
+        // code to be executed when expression matches value3
+        break;
+      default:
+        // code to be executed if none of the cases match expression
+    }
+
+## multiple identical options in switch
+
+    let num = 2;
+    
+    switch (num) {
+      case 1:
+      case 2:
+      case 3:
+        console.log("The number is between 1 and 3");
+        break;
+      case 4:
+      case 5:
+      case 6:
+        console.log("The number is between 4 and 6");
+        break;
+      default:
+        console.log("The number is not between 1 and 6");
+    }
+
+
+## returning booleans
+
+    return a < b;
+
+## returning early patterns in functions
+
+Returning early patterns in functions is a technique in JavaScript where you can improve the readability and maintainability of your code by returning early from a function if certain conditions are met. Here are a few common patterns:
+
+
+
+    function divide(num1, num2) {
+      if (num2 === 0) {
+        return 'Cannot divide by zero';
+      }
+      
+      return num1 / num2;
+    }
+
+## build objects
+
+    let myObject = {
+      key1: value1,
+      key2: value2,
+      key3: value3,
+      // ...
+    };
+
+    var theValue = myObject.key1; // would contain value1
+
+## accessing object properties with variables
+
+In JavaScript, you can access object properties using variables with either dot notation or bracket notation.
+
+Using dot notation:
+If you know the name of the property at the time of writing your code, you can use dot notation to access the object property. For example:
+
+    let myObject = {
+      name: "John",
+      age: 30,
+      city: "New York"
+    };
+    
+    let propertyName = "name";
+    console.log(myObject.name); // Outputs "John"
+    console.log(myObject[propertyName]); // Outputs "John"
+
+In this example, we use dot notation to access the name property of myObject. We also assign the string "name" to the propertyName variable, and then use bracket notation with myObject and propertyName enclosed in square brackets to access the name property dynamically.
+
+Using bracket notation:
+If you do not know the name of the property at the time of writing your code, or if the property name is stored in a variable, you can use bracket notation to access the object property. For example:
+
+    let myObject = {
+      name: "John",
+      age: 30,
+      city: "New York"
+    };
+
+    let propertyName = "name";
+    console.log(myObject[propertyName]); // Outputs "John"
+    
+    let propertyName = "name";
+    console.log(myObject[propertyName]); // Outputs "John"
+
+
+In this example, we use bracket notation with myObject and propertyName enclosed in square brackets to access the name property dynamically.
+
+It is important to note that if you use bracket notation with an invalid key or a non-existent property, it may result in an error. Therefore, you should always check if the property exists in the object before accessing it using a variable.
+
+## add a new property to objects
+
+    let myObject = {
+      name: "John",
+      age: 30,
+      city: "New York"
+    };
+    
+    myObject.parks = "many"; // would add another property
+
+## delete property from objects
+
+    delete myObject.parks;  
+
+## testing objects for properties
+
+    if(myObj.hasOwnProperty(checkProp));
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
