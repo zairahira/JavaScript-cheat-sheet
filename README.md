@@ -482,6 +482,63 @@ It is important to note that if you use bracket notation with an invalid key or 
     if(myObj.hasOwnProperty(checkProp));
 
 
+## Manipulating complex objects and accessing nested objects
+
+    const person = {
+      name: 'John Doe',
+      age: 30,
+      address: {
+        street: '123 Main St',
+        city: 'Anytown',
+        state: 'CA',
+        zipCode: '12345',
+        country: 'USA'
+      },
+      hobbies: ['reading', 'painting', 'hiking']
+    };
+
+In this example, the person object contains several properties, including an address object and an array of hobbies. The address object is a nested object, containing its own set of properties such as street, city, state, zipCode, and country. This type of nesting is commonly used to organize and represent complex data structures in a clear and organized way.
+ 
+## While loops
+
+    let count = 1;
+    
+    while (count <= 5) {
+      console.log(count);
+      count++;
+    }
+
+## For loop
+
+    for (let i = 1; i <= 5; i++) {
+      console.log(i);
+    }
+
+
+## backward for loop
+
+    for (let i = 5; i >= 1; i--) {
+      console.log(i);
+    }
+
+
+## do while
+
+    let i = 1;
+    
+    do {
+      console.log(i);
+      i++;
+    } while (i <= 5);
+
+
+## Math functions
+
+    Math.random();
+    Math.floor(Math.random() * 20); // rounded whole numbers between 1 and 20
+
+
+
 
 
 
