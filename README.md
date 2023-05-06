@@ -1,5 +1,81 @@
-# JS-cheat-sheet
-A list of basic JS commands and concepts
+# JavaScript-cheat-sheet
+
+A reference sheet of basic JS commands and concepts.
+
+
+# Table of contents
+
+- [Comments](#comments)
+- [Printing to console](#printing-to-console)
+- [Data types](#data-types)
+- [Variable naming convention](#variable-naming-convention)
+- [Declaring and initializing variables](#declaring-and-initializing-variables)
+- [Compound assignment](#compound-assignment)
+- [Declaring string variables](#declaring-string-variables)
+- [Escaping characters in strings](#escaping-characters-in-strings)
+- [Join strings](#join-strings)
+- [Find length of a string](#find-length-of-a-string)
+- [Access string characters indivudually](#access-string-characters-indivudually)
+- [Find the last caracter in a string:](#find-the-last-caracter-in-a-string)
+- [functions madlibs example](#functions-madlibs-example)
+- [Arrays](#arrays)
+- [Nested arrays or multidimensional array](#nested-arrays-or-multidimensional-array)
+- [Accessing multidimensional array items](#accessing-multidimensional-array-items)
+- [Modify array data](#modify-array-data)
+- [Access multi dimensional array](#access-multi-dimensional-array)
+- [array push() function](#array-push-function)
+- [array pop()](#array-pop)
+- [array shift()](#array-shift)
+- [array unshift()](#array-unshift)
+- [nested arrays shopping list](#nested-arrays-shopping-list)
+- [functions](#functions)
+- [passing arguments to function](#passing-arguments-to-function)
+- [Global scope](#global-scope)
+- [local variable takes precedence as compared to global variable](#local-variable-takes-precedence-as-compared-to-global-variable)
+- [undefined values in functions](#undefined-values-in-functions)
+- [return values in function](#return-values-in-function)
+- [queue LIFO](#queue-lifo)
+- [comparison with the equality operator](#comparison-with-the-equality-operator)
+- [comparison with the strict equality operator](#comparison-with-the-strict-equality-operator)
+- [comparison with the inequality operator](#comparison-with-the-inequality-operator)
+- [comparison with the strict inequality operator](#comparison-with-the-strict-inequality-operator)
+- [AND comparison](#and-comparison)
+- [else statements](#else-statements)
+- [else if statements](#else-if-statements)
+- [chaining if/else statements](#chaining-ifelse-statements)
+- [Logical order](#logical-order)
+- [Case statements](#case-statements)
+- [multiple identical options in switch](#multiple-identical-options-in-switch)
+- [Returning booleans](#returning-booleans)
+- [Returning early patterns in functions](#returning-early-patterns-in-functions)
+- [Build objects](#build-objects)
+- [accessing object properties with variables](#accessing-object-properties-with-variables)
+- [add a new property to objects](#add-a-new-property-to-objects)
+- [delete property from objects](#delete-property-from-objects)
+- [testing objects for properties](#testing-objects-for-properties)
+- [Manipulating complex objects and accessing nested objects](#manipulating-complex-objects-and-accessing-nested-objects)
+- [While loops](#while-loops)
+- [For loop](#for-loop)
+- [Backward for loop](#backward-for-loop)
+- [do while](#do-while)
+- [Math functions](#math-functions)
+- [Convert string to int using parseInt](#convert-string-to-int-using-parseint)
+- [Ternary operator](#ternary-operator)
+- [Nesting ternary operators](#nesting-ternary-operators)
+- [Difference between var and let](#difference-between-var-and-let)
+- [`use strict` to catch coding errors](#use-strict-to-catch-coding-errors)
+- [const](#const)
+- [mutate an array with const](#mutate-an-array-with-const)
+- [prevent object mutation](#prevent-object-mutation)
+- [arrow functions to write concise anonymous functions](#arrow-functions-to-write-concise-anonymous-functions)
+- [higher order arrow funcs](#higher-order-arrow-funcs)
+- [rest operator `...`](#rest-operator-)
+- [spread operator to evaluate arrays](#spread-operator-to-evaluate-arrays)
+- [Destructuring assignments](#destructuring-assignments)
+- [template literals](#template-literals)
+- [object can contain a function](#object-can-contain-a-function)
+- [class syntax to define a constructor function](#class-syntax-to-define-a-constructor-function)
+- [getter and setter](#getter-and-setter)
 
 
 
@@ -17,6 +93,7 @@ A list of basic JS commands and concepts
     console.log("Hello World");
 
 ## Data types
+JS supports these data types@
 
     undefined, null, boolean, string, symbol, number, object
 
@@ -68,7 +145,7 @@ object: stores key value pair.
 
     var quoteWithinQuote = "A wiseman said, \"save your time\"";
 
-string can also be surrounded by single quotes and back-ticks and then you don't need escape characters. with escape characters you can enclose both- single and double quotes.
+A string can also be surrounded by single quotes and back-ticks and then you don't need escape characters. With escape characters you can enclose both- single and double quotes.
 
 
 
@@ -230,7 +307,7 @@ undefined when you dont specify a return value
 
 ## return values in function
 
-     var changed = 0;
+    var changed = 0;
     
     function change(num) {
     return (num + 5) / 3;
@@ -296,7 +373,7 @@ To avoid the potential issues with type coercion, it's often recommended to use 
 
     if (val !== 77)
 
-## and comparison
+## AND comparison
 
     if (val <=50 && val >=25){ // both need to be true
     	// do somethins
@@ -355,11 +432,11 @@ To avoid the potential issues with type coercion, it's often recommended to use 
     }
 
 
-## logical order
+## Logical order
 
-the sequence of execution is top down
+The sequence of execution is top down
 
-## case statements
+## Case statements
 
     switch (expression) {
       case value1:
@@ -395,11 +472,11 @@ the sequence of execution is top down
     }
 
 
-## returning booleans
+## Returning booleans
 
     return a < b;
 
-## returning early patterns in functions
+## Returning early patterns in functions
 
 Returning early patterns in functions is a technique in JavaScript where you can improve the readability and maintainability of your code by returning early from a function if certain conditions are met. Here are a few common patterns:
 
@@ -413,7 +490,7 @@ Returning early patterns in functions is a technique in JavaScript where you can
       return num1 / num2;
     }
 
-## build objects
+## Build objects
 
     let myObject = {
       key1: value1,
@@ -515,7 +592,7 @@ In this example, the person object contains several properties, including an add
     }
 
 
-## backward for loop
+## Backward for loop
 
     for (let i = 5; i >= 1; i--) {
       console.log(i);
@@ -571,7 +648,7 @@ console.log(isEven); // Output: false
 
 ```
 
-## nesting ternary operators
+## Nesting ternary operators
 
 ```
 const score = 85;
@@ -662,20 +739,33 @@ Output:
 
 ## `use strict` to catch coding errors
 
-Used to catch common errors and coding errors
-usually used at the top of the code
-use all caps, variable naming convention.
-syntax:
+`"use strict"` is a directive in JavaScript that enables a stricter set of parsing and error-handling rules for your code. When you add the `"use strict"` directive at the beginning of a script or a function, it tells the browser to run the code in strict mode.
+
+Strict mode eliminates some silent errors by changing them to throw errors. For example, in non-strict mode, assigning a value to an undeclared variable will create a global variable. In strict mode, attempting to assign a value to an undeclared variable will throw a reference error.
+
+Strict mode also prohibits some syntax that is not allowed in ECMAScript 5, and allows reserved words to be used as property names in object literals.
+
+Here's an example of code that uses `"use strict"`:
 
     "use strict";
+    
+    function myFunction() {
+      x = 10;
+    }
+    
+    myFunction();
+
+In this code, the `"use strict"` directive is added at the beginning of the script, and a function is defined that attempts to assign a value to an undeclared variable (`x`). In strict mode, this will throw a reference error, because the variable `x` has not been declared.
+
+Using `"use strict"` is a good practice to catch coding errors and enforce more secure coding practices in your JavaScript code. It helps to identify and prevent potential bugs and security vulnerabilities.
 
 ## const
 
-const has all the features of let but also read only.
-cant be reassigned.
+`const` has all the features of let but it is also read only.
+ > `const` can't be reassigned.
 
 
-const is a keyword in JavaScript used to declare a variable that is read-only and cannot be reassigned a new value after it has been initialized.
+`const` is a keyword in JavaScript used to declare a variable that is read-only and cannot be reassigned a new value after it has been initialized.
 
 Here's an example:
 
@@ -721,48 +811,37 @@ so,
 
 `object.freeze` can prevent data mutation
 
-In JavaScript, the Object.freeze() method can be used to prevent the mutation of an object. When an object is frozen, its properties cannot be added, deleted, or modified.
 
+`Object.freeze()` is a method in JavaScript that can be used to freeze an object, preventing new properties from being added to it, and preventing existing properties from being modified or deleted.
 
+When you call `Object.freeze()` on an object, it will recursively freeze all the properties of the object and its nested objects, making them read-only and immutable. This means that you cannot add, delete, or modify the properties or values of the frozen objects.
 
-example:
+The scope of `Object.freeze()` is limited to the object it is applied to and its nested objects. It does not affect other objects in the same scope, nor does it affect objects in the parent or child scopes.
 
-```
-const person = {
-    name: "John",
-    age: 30
-  };
-  
- Object.freeze(person);
-  
-  person.age = 31;
-  console.log(person.age); // Output: 30
-  
-```
-
-In this example, we create an object person with two properties, name and age. We then use Object.freeze() to freeze the object, making it immutable. When we attempt to change the value of person.age, the assignment has no effect and the value of person.age remains at 30.
-
-Note that Object.freeze() only freezes the first level of an object's properties. If the object contains nested objects or arrays, those nested objects and arrays are not frozen and their properties can still be modified.
-
-Here's an example to illustrate this:
+Here's an example to illustrate the scope of `Object.freeze()`:
 
 
 ```
-const person = {
-  name: "John",
-  address: {
-    city: "New York",
-    state: "NY"
+let obj1 = {
+  a: 1,
+  b: {
+    c: 2,
+    d: 3
   }
 };
 
-Object.freeze(person);
+Object.freeze(obj1);
+obj1.a = 4;
+obj1.b.c = 5;
 
-person.address.city = "Boston";
-console.log(person.address.city); // Output: "Boston"
+console.log(obj1); // {a: 1, b: {c: 5, d: 3}}
+
 
 ```
 
+In this example, we create an object `obj1` with two properties, `a` and `b`. We then call `Object.freeze(obj1)` to freeze the object. After that, we attempt to change the value of `obj1.a` to `4` and `obj1.b.c` to `5`. However, since the object is frozen, these changes are not allowed and do not take effect. The output shows that the object is still the same as before it was frozen.
+
+Note that while `Object.freeze()` prevents the properties of an object from being changed, it does not prevent the values of the properties from being changed if they are themselves mutable objects.
 
 ## arrow functions to write concise anonymous functions
 
@@ -816,7 +895,7 @@ kicks in when the argument is not defined.
 
 takes a variable number of arguments
 
-the ... converts everthing passed into an array called args
+the `...` converts everthing passed into an array called args
 
 ```
 
@@ -889,13 +968,15 @@ console.log(getTempOfTmrw(AVG_TEMPERATURES));
 
 ## template literals
 
-make stringsmore versatilr
-uses backticks
-you can make multiline strings with it
+Makes strings more versatile.
 
-you can add single/ double quotation marks without escaping
+Uses backticks
 
-you can add variables values wihtin too
+You can make multiline strings with it.
+
+You can add single/ double quotation marks without escaping
+
+You can add variables values wihtin too
 
 ```
 const person = {
@@ -911,7 +992,7 @@ I am ${person.age} years old.`
 console.log( greeting) ;
 ```
 
-output also shows new line
+Note that the output also shows new line
 
 
 ## object can contain a function
@@ -1014,25 +1095,3 @@ console.log(rectangle1.area); // Output: 450
 
 
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
