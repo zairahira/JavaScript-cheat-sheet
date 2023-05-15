@@ -81,21 +81,27 @@ A reference sheet of basic JS commands and concepts.
 
 ## Comments
 
-    // inline comment
-    
-    /*
-    multi line comment
-    */
+```JavaScript
+// inline comment
 
+/*
+multi line comment
+*/
+```
 
 ## Printing to console
 
-    console.log("Hello World");
+
+```JavaScript
+console.log("Hello World");
+```
 
 ## Data types
 JS supports these data types@
 
-    undefined, null, boolean, string, symbol, number, object
+```JavaScript
+undefined, null, boolean, string, symbol, number, object
+```
 
 Where,
 symbol: immutable value
@@ -107,43 +113,51 @@ object: stores key value pair.
 
 ## Declaring and initializing variables
 
-    var a_variable;
-    
-    var myName = "Hero" // global
-    console.log(myName)
+```JavaScript
+var a_variable;
 
-    myName = 8
+var myName = "Hero" // global
+console.log(myName)
 
-    myName++
-    myName--
+myName = 8
 
-    let ourName = "freeCodeCamp" // let only within the scope
-    
-    const pi = 3.14 // const never changes
-    
-    console.log(pi)
-    
-    var c = ourName + myName //concatenate strings
-    console.log(c)
+myName++
+myName--
+
+let ourName = "freeCodeCamp" // let only within the scope
+
+const pi = 3.14 // const never changes
+
+console.log(pi)
+
+var c = ourName + myName //concatenate strings
+console.log(c)
+
+```
 
 ## Compound assignment
 
-    var a = a + 10;
-    //same as 
-    a+=10;
-    a-=10;
-    a*=10;
-    a/=10;
-
+```JavaScript
+var a = a + 10;
+//same as 
+a+=10;
+a-=10;
+a*=10;
+a/=10;
+```
 
 ## Declaring string variables
 
-    var firstName = "Stephen"
-    var lastName = "Hawkings"
+```JavaScript
+var firstName = "Stephen"
+var lastName = "Hawkings"
+```
 
 ## Escaping characters in strings
 
-    var quoteWithinQuote = "A wiseman said, \"save your time\"";
+```JavaScript
+var quoteWithinQuote = "A wiseman said, \"save your time\"";
+```
 
 A string can also be surrounded by single quotes and back-ticks and then you don't need escape characters. With escape characters you can enclose both- single and double quotes.
 
@@ -160,33 +174,41 @@ Some more escape characters:
 
 ## Join strings
 
-    var ourName2 = "freeCodeCamp" ;
-    var ourStr = "Hello, our name is" + ourName + "how are you?";
+```JavaScript
+var ourName2 = "freeCodeCamp" ;
+var ourStr = "Hello, our name is" + ourName + "how are you?";
+```
 
 ## Find length of a string 
 
-    the_len = ourName.length;
+```JavaScript
+the_len = ourName.length;
+```
 
 ## Access string characters indivudually
 
-    access = ourName[0]; // returns f
-
+```JavaScript
+access = ourName[0]; // returns f
+```
 > Strings are immutable means the individual letters can't be changed
 
-    // throws error:
-    var myString = "Jello world";
-    myString[0] = "H"
-    console.log(myString);
+```JavaScript
+// throws error:
+var myString = "Jello world";
+myString[0] = "H"
+console.log(myString);
+```
 
 ## Find the last caracter in a string:
 
-    var lastCharacter = myString[myString.length - 1];
-
+```JavaScript
+var lastCharacter = myString[myString.length - 1];
+```
  
 
 ## functions madlibs example
 
-```
+```JavaScript
 function madlibs() {
   // Define an object to hold the words for the story
   const words = {
@@ -205,74 +227,94 @@ function madlibs() {
 
 // Example usage
 madlibs();
-
-
 ```
 
 ## Arrays
 
-    var ourArray = ["John", 23]; // can be a mix of string and numbers
-    
-    var myArray = [];
+```JavaScript
+var ourArray = ["John", 23]; // can be a mix of string and numbers
+
+var myArray = [];
+```
 
 ## Nested arrays or multidimensional array
 
-    var ourArray = [["the universe"], 42];
+```JavaScript
+var ourArray = [["the universe"], 42];
+```
 
 ## Accessing multidimensional array items
 
-    console.log(ourArray[0])
+```JavaScript
+console.log(ourArray[0])
+```
 
 ## Modify array data
 
-    myArray[0] = 45;
+```JavaScript
+myArray[0] = 45;
+```
 
 ## Access multi dimensional array
 
-    var myArray = [[1,2,3], [3,4,5], [5,6,7], [[10,11,12], 13, 14]];
-    console.log(myArray[3][0][0]); // prints 10
-
+```JavaScript
+var myArray = [[1,2,3], [3,4,5], [5,6,7], [[10,11,12], 13, 14]];
+console.log(myArray[3][0][0]); // prints 10
+```
 
 ## array push() function
 
-    ourArray.push(["happy", "cat"]); // adds at the end of the array
+```JavaScript
+ourArray.push(["happy", "cat"]); // adds at the end of the array
+```
 
 ## array pop()
 
-    var ourArray = [1,2,3];
-    var removedFromOurArray = ourArray.pop() // removes the last element
+```JavaScript
+var ourArray = [1,2,3];
+var removedFromOurArray = ourArray.pop() // removes the last element
+```
 
 ## array shift()
 
-    var removedFromOurArray =  myArray.shift();// removes the first element
+```JavaScript
+var removedFromOurArray =  myArray.shift();// removes the first element
+```
 
 ## array unshift()
 
-    ourArray.unshift("Happy"); // adds element to beginning of the array
+```JavaScript
+ourArray.unshift("Happy"); // adds element to beginning of the array
+```
 
 ## nested arrays shopping list
 
-    var myList = [["cereal", 3], ["juice", 2], ["eggs",12]];
+```JavaScript
+var myList = [["cereal", 3], ["juice", 2], ["eggs",12]];
+```
 
 ## functions
 
-    function ourReusableFunction(){
-    	console.log("heyy");
-    }
-    
-    ourReusableFunction(); //function call
+```JavaScript
+function ourReusableFunction(){
+  console.log("heyy");
+}
+
+ourReusableFunction(); //function call
+```
 
 ## passing arguments to function
 
+```JavaScript
     function funcWithArcs(a, b) {
     	console.log(a - b);
     
     }
     
     funcWithArcs(10, 5);
-
+```
 ## Global scope
-
+```JavaScript
     //global variable
     
     var myGlobal = 10;
@@ -289,17 +331,20 @@ madlibs();
     // myGlobal accessable
     	
     }
+```
 
 ## local variable takes precedence as compared to global variable
 
-    var outerWear = "T-Shirt" ;
-    
-    function myOutfit() {
-    
-    var outerWear = " sweater" ;
-    return outerWear; // returns sweater
-    
-    }
+```JavaScript
+var outerWear = "T-Shirt" ;
+
+function myOutfit() {
+
+  var outerWear = " sweater" ;
+  return outerWear; // returns sweater
+
+}
+```
 
 ## undefined values in functions
 
@@ -307,6 +352,7 @@ undefined when you dont specify a return value
 
 ## return values in function
 
+```JavaScript
     var changed = 0;
     
     function change(num) {
@@ -314,9 +360,11 @@ undefined when you dont specify a return value
     }
     
     changed = change(l0);
+```
 
 ## queue LIFO
 
+```JavaScript
     function nextInLine(arr, item){
     
     arr.push (item) ;
@@ -333,12 +381,13 @@ undefined when you dont specify a return value
     Before: [1,2,3,4,5]
     1
     After: [2,3,4,5,6]
-
+```
 
 
 
 ## comparison with the equality operator
 
+```JavaScript
     function testEquaI(val) {
     if (val == 12) { // single = means assignment
     
@@ -347,6 +396,7 @@ undefined when you dont specify a return value
     }
     
     return "Not Equal";
+```
 
 Notes:
 
@@ -367,20 +417,28 @@ To avoid the potential issues with type coercion, it's often recommended to use 
 
 ## comparison with the inequality operator
 
+```JavaScript
     if (val != 99) 
+```
 
 ## comparison with the strict inequality operator
 
+```JavaScript
     if (val !== 77)
+
+```
 
 ## AND comparison
 
+```JavaScript
     if (val <=50 && val >=25){ // both need to be true
     	// do somethins
     }
+```
 
 ## else statements
 
+```JavaScript
 
 	if (true) {
 
@@ -390,9 +448,11 @@ To avoid the potential issues with type coercion, it's often recommended to use 
 
 	}
 
+```
 
 ## else if statements
 
+```JavaScript
     if() {
     
     }
@@ -405,8 +465,11 @@ To avoid the potential issues with type coercion, it's often recommended to use 
     
     }
 
+```
+
 ## chaining if/else statements
 
+```JavaScript
     if(){
     // ... code body here
     }
@@ -431,6 +494,7 @@ To avoid the potential issues with type coercion, it's often recommended to use 
     
     }
 
+```
 
 ## Logical order
 
@@ -438,6 +502,7 @@ The sequence of execution is top down
 
 ## Case statements
 
+```JavaScript
     switch (expression) {
       case value1:
         // code to be executed when expression matches value1
@@ -451,9 +516,11 @@ The sequence of execution is top down
       default:
         // code to be executed if none of the cases match expression
     }
+```
 
 ## multiple identical options in switch
 
+```JavaScript
     let num = 2;
     
     switch (num) {
@@ -471,17 +538,20 @@ The sequence of execution is top down
         console.log("The number is not between 1 and 6");
     }
 
+```
 
 ## Returning booleans
 
+```JavaScript
     return a < b;
+```
 
 ## Returning early patterns in functions
 
 Returning early patterns in functions is a technique in JavaScript where you can improve the readability and maintainability of your code by returning early from a function if certain conditions are met. Here are a few common patterns:
 
 
-
+```JavaScript
     function divide(num1, num2) {
       if (num2 === 0) {
         return 'Cannot divide by zero';
@@ -489,9 +559,11 @@ Returning early patterns in functions is a technique in JavaScript where you can
       
       return num1 / num2;
     }
+```
 
 ## Build objects
 
+```JavaScript
     let myObject = {
       key1: value1,
       key2: value2,
@@ -500,6 +572,7 @@ Returning early patterns in functions is a technique in JavaScript where you can
     };
 
     var theValue = myObject.key1; // would contain value1
+```
 
 ## accessing object properties with variables
 
@@ -508,6 +581,7 @@ In JavaScript, you can access object properties using variables with either dot 
 Using dot notation:
 If you know the name of the property at the time of writing your code, you can use dot notation to access the object property. For example:
 
+```JavaScript
     let myObject = {
       name: "John",
       age: 30,
@@ -518,11 +592,14 @@ If you know the name of the property at the time of writing your code, you can u
     console.log(myObject.name); // Outputs "John"
     console.log(myObject[propertyName]); // Outputs "John"
 
+```
+
 In this example, we use dot notation to access the name property of myObject. We also assign the string "name" to the propertyName variable, and then use bracket notation with myObject and propertyName enclosed in square brackets to access the name property dynamically.
 
 Using bracket notation:
 If you do not know the name of the property at the time of writing your code, or if the property name is stored in a variable, you can use bracket notation to access the object property. For example:
 
+```JavaScript
     let myObject = {
       name: "John",
       age: 30,
@@ -534,7 +611,7 @@ If you do not know the name of the property at the time of writing your code, or
     
     let propertyName = "name";
     console.log(myObject[propertyName]); // Outputs "John"
-
+```
 
 In this example, we use bracket notation with myObject and propertyName enclosed in square brackets to access the name property dynamically.
 
@@ -542,6 +619,7 @@ It is important to note that if you use bracket notation with an invalid key or 
 
 ## add a new property to objects
 
+```JavaScript
     let myObject = {
       name: "John",
       age: 30,
@@ -550,17 +628,22 @@ It is important to note that if you use bracket notation with an invalid key or 
     
     myObject.parks = "many"; // would add another property
 
+```
 ## delete property from objects
 
-    delete myObject.parks;  
+```JavaScript
+delete myObject.parks;  
+```
 
 ## testing objects for properties
 
+```JavaScript
     if(myObj.hasOwnProperty(checkProp));
-
+```
 
 ## Manipulating complex objects and accessing nested objects
 
+```JavaScript
     const person = {
       name: 'John Doe',
       age: 30,
@@ -573,34 +656,42 @@ It is important to note that if you use bracket notation with an invalid key or 
       },
       hobbies: ['reading', 'painting', 'hiking']
     };
+```
 
 In this example, the person object contains several properties, including an address object and an array of hobbies. The address object is a nested object, containing its own set of properties such as street, city, state, zipCode, and country. This type of nesting is commonly used to organize and represent complex data structures in a clear and organized way.
  
 ## While loops
 
+```JavaScript
     let count = 1;
     
     while (count <= 5) {
       console.log(count);
       count++;
     }
+```
 
 ## For loop
 
+```JavaScript
     for (let i = 1; i <= 5; i++) {
       console.log(i);
     }
 
+```
 
 ## Backward for loop
 
+```JavaScript
     for (let i = 5; i >= 1; i--) {
       console.log(i);
     }
 
+```
 
 ## do while
 
+```JavaScript
     let i = 1;
     
     do {
@@ -608,18 +699,21 @@ In this example, the person object contains several properties, including an add
       i++;
     } while (i <= 5);
 
+```
 
 ## Math functions
 
+```JavaScript
     Math.random();
     Math.floor(Math.random() * 20); // rounded whole numbers between 1 and 20
 
-
+```
 
 
 
 ## Convert string to int using parseInt
 
+```JavaScript
     function convertToInteger(str) {
         return parseInt(str, 2); // base 2 binary number
         
@@ -627,10 +721,13 @@ In this example, the person object contains several properties, including an add
     
     
     console.log(convertToInteger("10011"));
+```
 
 ## Ternary operator
 
+```JavaScript
     condition ? expression1 : expression2
+```
 
 In this syntax, condition is the expression that evaluates to a boolean value (either true or false), and expression1 and expression2 are two expressions that can be of any type.
 
@@ -639,7 +736,7 @@ The ternary operator works by first evaluating the condition. If the condition i
 Here's an example that uses the ternary operator to check if a number is even or odd:
 
 
-```
+```JavaScript
 const number = 5;
 const isEven = number % 2 === 0 ? true : false;
 
@@ -650,7 +747,7 @@ console.log(isEven); // Output: false
 
 ## Nesting ternary operators
 
-```
+```JavaScript
 const score = 85;
 
 const grade = score >= 90 ? "A" :
@@ -687,7 +784,7 @@ The student's grade is B.
 
 This code returns an error:
 
-```
+```JavaScript
 
 let catname = "arearre";
 let catname = "arewr"
@@ -706,7 +803,7 @@ Here are some of the key differences between var and let:
 
 Here's an example that demonstrates some of these differences:
 
-```
+```JavaScript
 function example() {
   var x = 1;
   let y = 2;
@@ -724,6 +821,7 @@ example();
 
 
 ```
+
 In this example, we declare two variables, x and y, using var and let, respectively. We then use an if statement to declare a new variable x and y within the block. Note that the var x declaration within the block is actually reassigning the original x variable, which is why the value of x is 3 both within and outside of the block. The let y declaration within the block, on the other hand, creates a new y variable that is only accessible within the block.
 
 Output:
@@ -747,6 +845,7 @@ Strict mode also prohibits some syntax that is not allowed in ECMAScript 5, and 
 
 Here's an example of code that uses `"use strict"`:
 
+```JavaScript
     "use strict";
     
     function myFunction() {
@@ -754,6 +853,7 @@ Here's an example of code that uses `"use strict"`:
     }
     
     myFunction();
+```
 
 In this code, the `"use strict"` directive is added at the beginning of the script, and a function is defined that attempts to assign a value to an undeclared variable (`x`). In strict mode, this will throw a reference error, because the variable `x` has not been declared.
 
@@ -769,21 +869,21 @@ Using `"use strict"` is a good practice to catch coding errors and enforce more 
 
 Here's an example:
 
-```
+```JavaScript
 const PI = 3.14;
 ```
 
 In this example, we use const to declare a variable PI and assign it the value 3.14. Once the PI variable has been initialized, it cannot be reassigned a new value. For example, the following code would result in a TypeError:
 
 
-```
+```JavaScript
 const PI = 3.14;
 PI = 4.0; // TypeError: Assignment to constant variable.
 ```
 
 One important thing to note is that const only creates read-only bindings for the variable itself. It does not make the value immutable. If the value is an object or an array, its properties or elements can still be modified. For example:
 
-```
+```JavaScript
 const arr = [1, 2, 3];
 arr.push(4); // This is allowed
 console.log(arr); // Output: [1, 2, 3, 4]
@@ -797,7 +897,7 @@ In this example, the arr variable is declared using const, but its elements can 
 You can still mutate an array and an object even if it is declared using `const`.
 
 
-```
+```JavaScript
 const arr = [1, 2, 3];
 arr[0]=77; // This is allowed
 console.log(arr); // Output: [ 77, 2, 3 ]
@@ -821,7 +921,7 @@ The scope of `Object.freeze()` is limited to the object it is applied to and its
 Here's an example to illustrate the scope of `Object.freeze()`:
 
 
-```
+```JavaScript
 let obj1 = {
   a: 1,
   b: {
@@ -847,8 +947,8 @@ Note that while `Object.freeze()` prevents the properties of an object from bein
 
 This is an anonymous function as it isn't named
 
-```
 
+```JavaScript
 var magic = function() {
 
 return new Date();
@@ -861,20 +961,19 @@ we can shorten this code like this using the arrow func:
 
 general syntax:
 
-```
+```JavaScript
 (parameters) => { statement }
 
 
 ```
 
-
-```
+```JavaScript
 const  magic = () => new Date();
 ```
 
-another ex
+another example
 
-```
+```JavaScript
 const add = (x, y) => {
   return x + y;
 };
@@ -897,7 +996,7 @@ takes a variable number of arguments
 
 the `...` converts everthing passed into an array called args
 
-```
+```JavaScript
 
 const sum = (...numbers) => {
   return numbers.reduce((total, num) => {
@@ -927,7 +1026,7 @@ Using the rest operator in this way allows us to write a more flexible and reusa
 spreads out an array
 here's an example of the spread operator (...) in JavaScript:
 
-```
+```JavaScript
 const numbers = [1, 2, 3, 4, 5];
 const newArray = [...numbers, 6, 7, 8];
 
@@ -944,7 +1043,7 @@ The spread operator is useful for concatenating arrays, creating new arrays that
 
 ## Destructuring assignments
 
-```
+```JavaScript
 const AVG_TEMPERATURES = {
     today: 77.5,
     tomorrow: 79
@@ -978,7 +1077,7 @@ You can add single/ double quotation marks without escaping
 
 You can add variables values wihtin too
 
-```
+```JavaScript
 const person = {
     name: "Zodiac Hasbro",
     age: 56
@@ -998,7 +1097,7 @@ Note that the output also shows new line
 ## object can contain a function
 
 
-```
+```JavaScript
 const bicycle = {
     gear: 2,
 
@@ -1016,7 +1115,7 @@ console.log (bicycle.gear) ;
 
 ## class syntax to define a constructor function
 
-```
+```JavaScript
 class Person {
   constructor(name, age) {
     this.name = name;
@@ -1047,7 +1146,7 @@ Using class syntax in this way allows us to create reusable object blueprints wi
 
 ## getter and setter
 
-```
+```JavaScript
 
 class Rectangle {
   constructor(width, height) {
